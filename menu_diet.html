@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- Navbar -->
+    <nav
+      class="md:backdrop-blur-md bg-white/70 shadow-md fixed w-full z-100 border-b border-white/30 font-inter"
+    >
+      <div class="mx-auto px-4 py-2 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center animate-on-scroll from-left">
+            <div class="mr-[100px]">
+              <img
+                src="Pesenin.png"
+                alt="Logo Pesenin"
+                class="h-15 w-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="hidden md:flex space-x-1 items-center font-semibold animate-on-scroll from-right"
+          >
+            <a
+              href="homepage_login.html"
+              class="text-[#004721] hover:bg-[#E6E6E5] rounded-md px-5 py-2 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="menu_protein.html"
+              class="text-[#004721] hover:bg-[#E6E6E5] rounded-md px-5 py-2 transition-colors duration-200"
+              >Menu</a
+            >
+          </div>
+
+          <div
+            class="hidden md:flex space-x-4 items-center font-semibold animate-on-scroll from-right"
+          >
+            <div>
+              <a href="keranjang.html">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9967 32C9.7973 32 8.01779 33.8 8.01779 36C8.01779 38.2 9.7973 40 11.9967 40C14.1961 40 15.9956 38.2 15.9956 36C15.9956 33.8 14.1961 32 11.9967 32ZM31.9912 32C29.7918 32 28.0123 33.8 28.0123 36C28.0123 38.2 29.7918 40 31.9912 40C34.1906 40 35.9901 38.2 35.9901 36C35.9901 33.8 34.1906 32 31.9912 32ZM29.092 22C30.5916 22 31.9112 21.18 32.591 19.94L39.7491 6.96C39.9176 6.65685 40.004 6.31494 39.9999 5.96811C39.9957 5.62128 39.9011 5.28154 39.7253 4.98252C39.5496 4.6835 39.2989 4.43556 38.9979 4.26324C38.697 4.09091 38.3563 4.00017 38.0095 4H8.41768L6.5382 0H0V4H3.9989L11.1969 19.18L8.49766 24.06C7.03806 26.74 8.95753 30 11.9967 30H35.9901V26H11.9967L14.1961 22H29.092ZM10.3172 8H34.6105L29.092 18H15.0559L10.3172 8Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="historis.html">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 40C14.8889 40 10.4356 38.3059 6.64 34.9178C2.84444 31.5296 0.668148 27.2978 0.111111 22.2222H4.66667C5.18518 26.0741 6.89852 29.2592 9.80667 31.7778C12.7148 34.2963 16.1126 35.5555 20 35.5555C24.3333 35.5555 28.0096 34.0467 31.0289 31.0289C34.0481 28.0111 35.557 24.3348 35.5556 20C35.5541 15.6652 34.0452 11.9896 31.0289 8.97333C28.0126 5.95704 24.3363 4.44741 20 4.44444C17.4444 4.44444 15.0556 5.03704 12.8333 6.22222C10.6111 7.40741 8.74074 9.03703 7.22222 11.1111H13.3333V15.5556H0V2.22222H4.44444V7.44444C6.33333 5.07407 8.63926 3.24074 11.3622 1.94444C14.0852 0.648148 16.9644 0 20 0C22.7778 0 25.38 0.528148 27.8067 1.58444C30.2333 2.64074 32.3444 4.06592 34.14 5.86C35.9356 7.65407 37.3615 9.76518 38.4178 12.1933C39.4741 14.6215 40.0015 17.2237 40 20C39.9985 22.7763 39.4711 25.3785 38.4178 27.8067C37.3644 30.2348 35.9385 32.3459 34.14 34.14C32.3415 35.9341 30.2304 37.36 27.8067 38.4178C25.383 39.4755 22.7807 40.003 20 40ZM26.2222 29.3333L17.7778 20.8889V8.88889H22.2222V19.1111L29.3333 26.2222L26.2222 29.3333Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="p-2 bg-[#5C8D78] rounded-full">
+              <a href="profile.html">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.4268 21.4186C29.3973 19.8769 30.8356 17.7626 31.5415 15.37C32.2475 12.9774 32.1861 10.4255 31.3658 8.06927C30.5455 5.71304 29.0071 3.66966 26.9647 2.22342C24.9223 0.777182 22.4774 0 19.9702 0C17.463 0 15.0181 0.777182 12.9757 2.22342C10.9333 3.66966 9.39492 5.71304 8.57462 8.06927C7.75433 10.4255 7.69289 12.9774 8.39886 15.37C9.10482 17.7626 10.5431 19.8769 12.5136 21.4186C9.13712 22.764 6.19106 24.9953 3.98945 27.8748C1.78784 30.7542 0.41322 34.1739 0.0121232 37.7692C-0.0169102 38.0317 0.00632785 38.2973 0.0805101 38.5509C0.154692 38.8044 0.278366 39.041 0.444471 39.247C0.779934 39.6631 1.26786 39.9296 1.80091 39.9879C2.33397 40.0462 2.86848 39.8916 3.28686 39.558C3.70525 39.2243 3.97324 38.7391 4.03188 38.209C4.47321 34.3016 6.34662 30.6929 9.29417 28.0724C12.2417 25.4519 16.0568 24.0032 20.0104 24.0032C23.964 24.0032 27.7791 25.4519 30.7266 28.0724C33.6742 30.6929 35.5476 34.3016 35.9889 38.209C36.0435 38.7001 36.2792 39.1537 36.6504 39.4823C37.0215 39.8108 37.5019 39.9909 37.9988 39.9879H38.2199C38.7467 39.9276 39.2283 39.6627 39.5596 39.2509C39.8909 38.839 40.0451 38.3136 39.9886 37.7892C39.5856 34.1837 38.2035 30.7552 35.9906 27.8713C33.7777 24.9874 30.8173 22.7568 27.4268 21.4186ZM19.9702 19.9995C18.3801 19.9995 16.8258 19.5305 15.5037 18.652C14.1816 17.7734 13.1511 16.5247 12.5427 15.0638C11.9342 13.6028 11.775 11.9952 12.0852 10.4442C12.3954 8.89329 13.1611 7.46865 14.2854 6.35048C15.4097 5.2323 16.8423 4.47081 18.4018 4.16231C19.9613 3.85381 21.5778 4.01214 23.0468 4.61729C24.5158 5.22245 25.7714 6.24723 26.6548 7.56207C27.5382 8.87691 28.0097 10.4227 28.0097 12.0041C28.0097 14.1246 27.1627 16.1582 25.655 17.6577C24.1473 19.1571 22.1024 19.9995 19.9702 19.9995Z"
+                    fill="#ECF3F1"
+                  />
+                </svg>
+              </a>
+            </div>
+            <a
+              href="index.html"
+              class="bg-white hover:bg-[#5CA877] hover:text-white text-[#5C8D78] font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-200 flex items-center gap-x-2 justify-center"
+            >
+              Keluar
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="transition-colors duration-200"
+              >
+                <path
+                  d="M14.3845 7.884C14.6183 7.64918 14.7495 7.33134 14.7495 7C14.7495 6.66867 14.6183 6.35082 14.3845 6.116L9.38452 1.116C9.26843 0.999913 9.13061 0.907826 8.97893 0.844999C8.82726 0.782173 8.66469 0.749836 8.50052 0.749836C8.16895 0.749836 7.85097 0.88155 7.61652 1.116C7.38207 1.35045 7.25035 1.66844 7.25035 2C7.25035 2.33157 7.38207 2.64955 7.61652 2.884L10.4825 5.75L1.50052 5.75C1.169 5.75 0.851053 5.8817 0.616632 6.11612C0.382212 6.35054 0.250517 6.66848 0.250517 7C0.250517 7.33152 0.382212 7.64946 0.616632 7.88388C0.851053 8.1183 1.169 8.25 1.50052 8.25L10.4825 8.25L7.61652 11.116C7.50043 11.2321 7.40834 11.3699 7.34552 11.5216C7.28269 11.6733 7.25035 11.8358 7.25035 12C7.25035 12.1642 7.28269 12.3267 7.34552 12.4784C7.40834 12.6301 7.50043 12.7679 7.61652 12.884C7.73261 13.0001 7.87042 13.0922 8.0221 13.155C8.17378 13.2178 8.33634 13.2502 8.50052 13.2502C8.66469 13.2502 8.82726 13.2178 8.97893 13.155C9.13061 13.0922 9.26843 13.0001 9.38452 12.884L14.3845 7.884Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="md:hidden pr-5">
+            <button
+              id="menu-toggle"
+              class="text-[#004721] focus:outline-none text-2xl"
+              aria-label="Toggle mobile menu"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-2/4 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden font-semibold"
+      >
+        <div class="p-6">
+          <button
+            id="menu-close"
+            class="text-2xl text-[#004721] float-right focus:outline-none"
+            aria-label="Close mobile menu"
+          >
+            ✕
+          </button>
+          <nav class="mt-10 space-y-4 animate-on-scroll from-top">
+            <a
+              href="index.html"
+              class="block text-[#004721] hover:bg-[#E6E6E5] p-2 transition-colors duration-200"
+            >
+              Home
+            </a>
+            <a
+              href="menu.html"
+              class="block text-[#004721] hover:bg-[#E6E6E5] p-2 transition-colors duration-200"
+            >
+              Menu
+            </a>
+
+            <div class="mt-8 space-y-4 border-t pt-6">
+              <a
+                href="keranjang.html"
+                class="flex items-center space-x-2 text-[#004721] hover:bg-[#E6E6E5] p-2 transition-colors duration-200"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9967 32C9.7973 32 8.01779 33.8 8.01779 36C8.01779 38.2 9.7973 40 11.9967 40C14.1961 40 15.9956 38.2 15.9956 36C15.9956 33.8 14.1961 32 11.9967 32ZM31.9912 32C29.7918 32 28.0123 33.8 28.0123 36C28.0123 38.2 29.7918 40 31.9912 40C34.1906 40 35.9901 38.2 35.9901 36C35.9901 33.8 34.1906 32 31.9912 32ZM29.092 22C30.5916 22 31.9112 21.18 32.591 19.94L39.7491 6.96C39.9176 6.65685 40.004 6.31494 39.9999 5.96811C39.9957 5.62128 39.9011 5.28154 39.7253 4.98252C39.5496 4.6835 39.2989 4.43556 38.9979 4.26324C38.697 4.09091 38.3563 4.00017 38.0095 4H8.41768L6.5382 0H0V4H3.9989L11.1969 19.18L8.49766 24.06C7.03806 26.74 8.95753 30 11.9967 30H35.9901V26H11.9967L14.1961 22H29.092ZM10.3172 8H34.6105L29.092 18H15.0559L10.3172 8Z"
+                    fill="black"
+                  />
+                </svg>
+                <span>Keranjang</span>
+              </a>
+
+              <a
+                href="historis.html"
+                class="flex items-center space-x-2 text-[#004721] hover:bg-[#E6E6E5] p-2 transition-colors duration-200"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 40C14.8889 40 10.4356 38.3059 6.64 34.9178C2.84444 31.5296 0.668148 27.2978 0.111111 22.2222H4.66667C5.18518 26.0741 6.89852 29.2592 9.80667 31.7778C12.7148 34.2963 16.1126 35.5555 20 35.5555C24.3333 35.5555 28.0096 34.0467 31.0289 31.0289C34.0481 28.0111 35.557 24.3348 35.5556 20C35.5541 15.6652 34.0452 11.9896 31.0289 8.97333C28.0126 5.95704 24.3363 4.44741 20 4.44444C17.4444 4.44444 15.0556 5.03704 12.8333 6.22222C10.6111 7.40741 8.74074 9.03703 7.22222 11.1111H13.3333V15.5556H0V2.22222H4.44444V7.44444C6.33333 5.07407 8.63926 3.24074 11.3622 1.94444C14.0852 0.648148 16.9644 0 20 0C22.7778 0 25.38 0.528148 27.8067 1.58444C30.2333 2.64074 32.3444 4.06592 34.14 5.86C35.9356 7.65407 37.3615 9.76518 38.4178 12.1933C39.4741 14.6215 40.0015 17.2237 40 20C39.9985 22.7763 39.4711 25.3785 38.4178 27.8067C37.3644 30.2348 35.9385 32.3459 34.14 34.14C32.3415 35.9341 30.2304 37.36 27.8067 38.4178C25.383 39.4755 22.7807 40.003 20 40ZM26.2222 29.3333L17.7778 20.8889V8.88889H22.2222V19.1111L29.3333 26.2222L26.2222 29.3333Z"
+                    fill="black"
+                  />
+                </svg>
+                <span>Riwayat</span>
+              </a>
+
+              <a
+                href="profile.html"
+                class="flex items-center space-x-2 text-[#004721] hover:bg-[#E6E6E5] p-2 transition-colors duration-200"
+              >
+                <div class="p-1 bg-[#5C8D78] rounded-full">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.4268 21.4186C29.3973 19.8769 30.8356 17.7626 31.5415 15.37C32.2475 12.9774 32.1861 10.4255 31.3658 8.06927C30.5455 5.71304 29.0071 3.66966 26.9647 2.22342C24.9223 0.777182 22.4774 0 19.9702 0C17.463 0 15.0181 0.777182 12.9757 2.22342C10.9333 3.66966 9.39492 5.71304 8.57462 8.06927C7.75433 10.4255 7.69289 12.9774 8.39886 15.37C9.10482 17.7626 10.5431 19.8769 12.5136 21.4186C9.13712 22.764 6.19106 24.9953 3.98945 27.8748C1.78784 30.7542 0.41322 34.1739 0.0121232 37.7692C-0.0169102 38.0317 0.00632785 38.2973 0.0805101 38.5509C0.154692 38.8044 0.278366 39.041 0.444471 39.247C0.779934 39.6631 1.26786 39.9296 1.80091 39.9879C2.33397 40.0462 2.86848 39.8916 3.28686 39.558C3.70525 39.2243 3.97324 38.7391 4.03188 38.209C4.47321 34.3016 6.34662 30.6929 9.29417 28.0724C12.2417 25.4519 16.0568 24.0032 20.0104 24.0032C23.964 24.0032 27.7791 25.4519 30.7266 28.0724C33.6742 30.6929 35.5476 34.3016 35.9889 38.209C36.0435 38.7001 36.2792 39.1537 36.6504 39.4823C37.0215 39.8108 37.5019 39.9909 37.9988 39.9879H38.2199C38.7467 39.9276 39.2283 39.6627 39.5596 39.2509C39.8909 38.839 40.0451 38.3136 39.9886 37.7892C39.5856 34.1837 38.2035 30.7552 35.9906 27.8713C33.7777 24.9874 30.8173 22.7568 27.4268 21.4186ZM19.9702 19.9995C18.3801 19.9995 16.8258 19.5305 15.5037 18.652C14.1816 17.7734 13.1511 16.5247 12.5427 15.0638C11.9342 13.6028 11.775 11.9952 12.0852 10.4442C12.3954 8.89329 13.1611 7.46865 14.2854 6.35048C15.4097 5.2323 16.8423 4.47081 18.4018 4.16231C19.9613 3.85381 21.5778 4.01214 23.0468 4.61729C24.5158 5.22245 25.7714 6.24723 26.6548 7.56207C27.5382 8.87691 28.0097 10.4227 28.0097 12.0041C28.0097 14.1246 27.1627 16.1582 25.655 17.6577C24.1473 19.1571 22.1024 19.9995 19.9702 19.9995Z"
+                      fill="#ECF3F1"
+                    />
+                  </svg>
+                </div>
+                <span>Profil</span>
+              </a>
+              <a
+                href="index.html"
+                class="bg-white hover:bg-[#5CA877] hover:text-white text-[#5C8D78] font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-200 flex items-center gap-x-2 justify-center"
+              >
+                Keluar
+                <svg
+                  width="15"
+                  height="14"
+                  viewBox="0 0 15 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="transition-colors duration-200"
+                >
+                  <path
+                    d="M14.3845 7.884C14.6183 7.64918 14.7495 7.33134 14.7495 7C14.7495 6.66867 14.6183 6.35082 14.3845 6.116L9.38452 1.116C9.26843 0.999913 9.13061 0.907826 8.97893 0.844999C8.82726 0.782173 8.66469 0.749836 8.50052 0.749836C8.16895 0.749836 7.85097 0.88155 7.61652 1.116C7.38207 1.35045 7.25035 1.66844 7.25035 2C7.25035 2.33157 7.38207 2.64955 7.61652 2.884L10.4825 5.75L1.50052 5.75C1.169 5.75 0.851053 5.8817 0.616632 6.11612C0.382212 6.35054 0.250517 6.66848 0.250517 7C0.250517 7.33152 0.382212 7.64946 0.616632 7.88388C0.851053 8.1183 1.169 8.25 1.50052 8.25L10.4825 8.25L7.61652 11.116C7.50043 11.2321 7.40834 11.3699 7.34552 11.5216C7.28269 11.6733 7.25035 11.8358 7.25035 12C7.25035 12.1642 7.28269 12.3267 7.34552 12.4784C7.40834 12.6301 7.50043 12.7679 7.61652 12.884C7.73261 13.0001 7.87042 13.0922 8.0221 13.155C8.17378 13.2178 8.33634 13.2502 8.50052 13.2502C8.66469 13.2502 8.82726 13.2178 8.97893 13.155C9.13061 13.0922 9.26843 13.0001 9.38452 12.884L14.3845 7.884Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Searchbar -->
+    <div class="w-full pt-20 sm:pt-25 sm:pb-10 z-10 relative ">
+      <div class="absolute -top-10 left-5 -z-1">
+        <img src="Random Food.png" alt="" />
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 animate-on-scroll from-top"
+      >
+        <h1 class="font-poppins text-[40px] font-bold md:w-2/3">
+          Semua Makanan
+        </h1>
+        <div
+          class="relative w-full md:w-1/3 flex justify-center md:justify-end"
+        >
+          <div
+            class="relative text-gray-600 border border-gray-200 shadow-lg rounded-full w-full max-w-sm"
+          >
+            <input
+              type="search"
+              name="search"
+              placeholder="Cari Menu Makanan"
+              class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none font-inter w-full"
+            />
+            <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+              <svg
+                class="h-4 w-4 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 56.966 56.966"
+                style="enable-background: new 0 0 56.966 56.966"
+                xml:space="preserve"
+                width="512px"
+                height="512px"
+              >
+                <path
+                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 s-17-7.626-17-17S14.61,6,23.984,6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <section class="bg-white relative z-10">
+      <div class="cotainer mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row mt-8 md:mt-12 gap-8">
+          <nav
+            class="md:w-1/4 lg:w-1/5 flex-shrink-0 md:sticky top-22 md:h-screen md:overflow-y-auto font-poppins border-gray-100 animate-on-scroll from-left"
+          >
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="./menu_protein.html"
+                  class="block py-2 px-4 rounded-lg text-gray-600 font-bold hover:bg-gray-100 transition-colors duration-200"
+                  >Menu Kaya Protein</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./menu_diet.html"
+                  class="block py-2 px-4 rounded-lg bg-[#F5F5F5] text-gray-800 font-bold hover:bg-gray-100 transition-colors duration-200"
+                  >Menu Diet Sehat</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./menu_sehat.html"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Sehat & Seimbang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./menu_praktis.html"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Praktis & Camilan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./menu_minuman.html"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Minuman Sehat</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="relative grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 flex-grow animate-on-scroll from-right"
+          >
+            <!-- BG image -->
+            <div class="absolute -z-0">
+              <img
+                src="food_abstract.png"
+                alt=""
+                class="w-full h-full object-cover opacity-50"
+              />
+            </div>
+
+            <!-- Daftar Makanan -->
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button onclick="">
+                    <img src="Plus.png" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button
+                    class="btn-plus"
+                    data-nama="Grilled Chicken Quinoa Bowl"
+                    data-harga="38000"
+                  >
+                    <img src="Plus.png" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse xl:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <div
+                  class="flex justify-between items-center font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2 px-5 flex-wrap"
+                >
+                  <span>38000</span>
+                  <button><img src="Plus.png" alt="" /></button>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 xl:w-48 flex-shrink-0">
+                <img
+                  src="Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 md:py-16 font-inter relative">
+      <div class="absolute">
+        <svg
+          width="1440"
+          height="305"
+          viewBox="0 0 1440 305"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.6" filter="url(#filter0_f_181_2455)">
+            <ellipse
+              cx="719.577"
+              cy="547.504"
+              rx="803.792"
+              ry="410"
+              transform="rotate(-1.25484 719.577 547.504)"
+              fill="url(#paint0_linear_181_2455)"
+              fill-opacity="0.24"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_181_2455"
+              x="-284.072"
+              y="-62.7822"
+              width="2007.3"
+              height="1220.57"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_181_2455"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_181_2455"
+              x1="737.635"
+              y1="143.348"
+              x2="810.934"
+              y2="718.024"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#F8C049" />
+              <stop offset="1" stop-color="#00AF23" stop-opacity="0.29" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 items-start"
+        >
+          <div class="flex flex-col text-left">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 font-poppins">
+              Pesenin
+            </h3>
+            <p class="text-gray-600 text-base leading-relaxed max-w-[200px]">
+              Solusi Makanan Sehat dan Bergizi Setiap Hari
+            </p>
+          </div>
+
+          <div class="flex flex-col text-left sm:items-end">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 font-poppins">
+              Contact Us
+            </h3>
+            <div class="space-y-3">
+              <a
+                href="mailto:pesenin@gmail.com"
+                class="flex items-center justify-start sm:justify-end text-gray-600 hover:text-[#004721] transition-colors duration-200"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+                <span>pesenin@gmail.com</span>
+              </a>
+              <a
+                href="tel:+6281265663491"
+                class="flex items-center justify-start sm:justify-end text-gray-600 hover:text-[#004721] transition-colors duration-200"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.163 18 3 13.837 3 8V5a1 1 0 011-1h1z"
+                  ></path>
+                </svg>
+                <span>+62 812-6566-3491</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 my-8 md:my-12"></div>
+
+        <div class="text-center text-gray-500 text-sm">
+          Copyright @ Pesenin 2025 . All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/pesanan.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+  </body>
+</html>
