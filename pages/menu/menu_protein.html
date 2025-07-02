@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="relative overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav
+      class="md:backdrop-blur-md bg-white/70 shadow-md fixed w-full z-100 border-b border-white/30 font-inter"
+    >
+      <div class="mx-auto px-4 py-2 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center animate-on-scroll from-left">
+            <div class="mr-[100px]">
+              <img
+                src="/images/Pesenin.png"
+                alt="Logo Pesenin"
+                class="h-15 w-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="hidden md:flex space-x-1 items-center font-semibold animate-on-scroll from-right"
+          >
+            <a
+              href="/pages/homepage.html"
+              class="text-[#004721] hover:bg-[#E6E6E5] rounded-md px-5 py-2 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="/pages/menu/menu_protein.html"
+              class="text-[#004721] hover:bg-[#E6E6E5] rounded-md px-5 py-2 transition-colors duration-200"
+              >Menu</a
+            >
+          </div>
+
+          <div
+            class="hidden md:flex space-x-4 items-center font-semibold animate-on-scroll from-right"
+          >
+            <a
+              href="/pages/daftar.html"
+              class="bg-[#5C8D78] hover:bg-[#5CA877] text-white font-bold py-2 px-8 rounded-full shadow-lg transition-colors duration-200"
+            >
+              Daftar
+            </a>
+            <a
+              href="/pages/masuk.html"
+              class="bg-white hover:bg-[#5CA877] hover:text-white text-[#5C8D78] font-bold py-2 px-8 rounded-full shadow-lg transition-colors duration-200"
+            >
+              Masuk
+            </a>
+          </div>
+
+          <div class="md:hidden pr-5">
+            <button
+              id="menu-toggle"
+              class="text-[#004721] focus:outline-none text-2xl"
+              aria-label="Toggle mobile menu"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-2/4 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden font-semibold"
+      >
+        <div class="p-6">
+          <button
+            id="menu-close"
+            class="text-2xl text-[#004721] float-right focus:outline-none"
+            aria-label="Close mobile menu"
+          >
+            ✕
+          </button>
+          <nav class="mt-10 space-y-4 animate-on-scroll from-top">
+            <a
+              href="homepage.html"
+              class="block text-[#004721] hover:bg-[#E6E6E5] p-2 m-0 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="menu.html"
+              class="block text-[#004721] hover:bg-[#E6E6E5] p-2 m-0 transition-colors duration-200"
+              >Menu</a
+            >
+            <a
+              href="daftar.html"
+              class="block text-[#5C8D78] hover:bg-[#E6E6E5] p-2 m-0 transition-colors duration-200"
+              >Daftar</a
+            >
+            <a
+              href="masuk.html"
+              class="block text-[#5C8D78] hover:bg-[#E6E6E5] p-2 m-0 transition-colors duration-200"
+              >Masuk</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Searchbar -->
+    <section class="bg-white py-12 md:py-16 font-inter">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="w-full py-8 sm:py-12">
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <h1
+              class="font-poppins text-[40px] font-bold text-center md:text-left"
+            >
+              Semua Makanan
+            </h1>
+            <div
+              class="relative w-full md:w-auto flex justify-center md:justify-end"
+            >
+              <div
+                class="relative text-gray-600 border border-gray-200 shadow-lg rounded-full w-full max-w-sm"
+              >
+                <input
+                  type="search"
+                  name="search"
+                  placeholder="Cari Menu Makanan"
+                  class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none font-inter w-full"
+                />
+                <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                  <svg
+                    class="h-4 w-4 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Capa_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 56.966 56.966"
+                    style="enable-background: new 0 0 56.966 56.966"
+                    xml:space="preserve"
+                    width="512px"
+                    height="512px"
+                  >
+                    <path
+                      d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 s-17-7.626-17-17S14.61,6,23.984,6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="bg-white relative z-10">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row mt-8 md:mt-12 gap-8">
+          <nav
+            class="md:w-1/4 lg:w-1/5 flex-shrink-0 md:sticky top-22 md:h-screen md:overflow-y-auto font-poppins border-gray-100"
+          >
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 rounded-lg bg-[#F5F5F5] text-gray-800 font-bold hover:bg-gray-100 transition-colors duration-200"
+                  >Menu Kaya Protein</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 rounded-lg text-gray-600 font-bold hover:bg-gray-100 transition-colors duration-200"
+                  >Menu Diet Sehat</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Sehat & Seimbang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Praktis & Camilan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 rounded-lg text-gray-600 hover:bg-gray-100 font-bold transition-colors duration-200"
+                  >Menu Minuman Sehat</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="relative grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 flex-grow"
+          >
+            <!-- BG image -->
+            <div class="absolute -z-0">
+              <img
+                src="/images/food_abstract.png"
+                alt=""
+                class="w-full h-full object-cover opacity-50"
+              />
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col-reverse lg:flex-row p-4 gap-4 z-10"
+            >
+              <!-- Text Content -->
+              <div class="flex-1">
+                <h4
+                  class="font-poppins text-lg font-semibold text-gray-800 mb-2"
+                >
+                  Grilled Chicken Quinoa Bowl
+                </h4>
+                <div class="text-sm text-gray-600 mb-3 space-y-1">
+                  <p class="font-medium">Kandungan Nutrisi:</p>
+                  <ul class="list-disc list-inside ml-4">
+                    <li>520 kalori</li>
+                    <li>38g protein</li>
+                    <li>12g lemak</li>
+                    <li>45g karbohidrat</li>
+                  </ul>
+                </div>
+                <p
+                  class="font-poppins text-center text-lg font-bold text-[#5C8D78] shadow-lg rounded-full py-2"
+                >
+                  Rp38.000
+                </p>
+              </div>
+
+              <!-- Image -->
+              <div class="w-full h-48 lg:w-48 flex-shrink-0">
+                <img
+                  src="/images/Menu kaya protein/Grilled Chicken Quinoa Bowl.png"
+                  alt="Grilled Chicken Quinoa Bowl"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/javascript/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+  </body>
+</html>

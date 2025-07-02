@@ -1,0 +1,45 @@
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* State awal sebelum terlihat */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s ease-out;
+}
+/* Muncul dari bawah */
+.animate-on-scroll.from-bottom {
+  transform: translateY(30px) scale(0.95);
+}
+
+/* Muncul dari atas */
+.animate-on-scroll.from-top {
+  transform: translateY(-30px) scale(0.95);
+  -webkit-transform: translateY(-30px) scale(0.95);
+  -moz-transform: translateY(-30px) scale(0.95);
+  -ms-transform: translateY(-30px) scale(0.95);
+  -o-transform: translateY(-30px) scale(0.95);
+}
+
+/* Muncul dari kanan */
+.animate-on-scroll.from-right {
+  transform: translateX(30px) scale(0.95);
+}
+/* Muncul dari Kiri */
+.animate-on-scroll.from-left {
+  transform: translateX(-30px) scale(0.95);
+  -webkit-transform: translateX(-30px) scale(0.95);
+  -moz-transform: translateX(-30px) scale(0.95);
+  -ms-transform: translateX(-30px) scale(0.95);
+  -o-transform: translateX(-30px) scale(0.95);
+}
+
+/* Saat masuk ke viewport */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
